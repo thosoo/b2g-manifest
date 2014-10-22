@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <include name="base-kk-aosp.xml"/>
+  <remote  name="evervolv" fetch="git://github.com/Evervolv/" review="review.evervolv.com"/>
+  <remote  name="mgit" fetch="git://github.com/thosoo/"/>
+  <default remote="caf" revision="refs/tags/android-4.4.2_r1" sync-j="4"/>
+
+  <!-- bravo specific things -->
+  <project name="device-bravo" path="device/htc/bravo" remote="mgit" revision="master"/>
+  <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>  
+  <project name="android_device_htc_qsd8k-common" path="device/htc/qsd8k-common" remote="evervolv" revision="kitkat"/>
+  <project name="android_kernel_htc_qsd8k" path="kernel/htc/qsd8k" remote="evervolv" revision="kitkat" />
+  <project name="android_vendor_htc" path="vendor/htc" remote="evervolv" revision="kitkat"/>
+  <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_msm7k" path="hardware/msm7k" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_audio-legacy" path="hardware/qcom/audio-legacy" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="evervolv" revision="jellybean" />
+  <project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_power" path="hardware/qcom/power" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_sensors" path="hardware/qcom/sensors" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="evervolv" revision="kitkat"/>
+  <project name="android_hardware_ril" path="hardware/ril" remote="evervolv" revision="kitkat"/>
+  
+</manifest>
